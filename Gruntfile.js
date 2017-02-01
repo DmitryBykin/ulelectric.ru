@@ -70,7 +70,7 @@ module.exports = function(grunt) {
     webp: {
       files: {
         expand: true,        
-        src: 'images/*.{png,gif,jpg}'
+        src: 'images/*.{png, jpg}'
         //dest: 'images/*'
         //cwd: 'source-images/*.png'
       },
