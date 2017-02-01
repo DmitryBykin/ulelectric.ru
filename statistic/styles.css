@@ -1,0 +1,30 @@
+.row {
+	padding: 10px;
+	border-bottom: 1px dotted black;
+}
+.row:nth-of-type(odd){
+	background-color: #F5F5F5;
+}
+.row:nth-of-type(even){
+	background-color: #F0F8FF;
+}
+.ip {
+	width: 150px;
+	display: inline-block;
+	vertical-align: top;
+}
+.numbytes {
+	width: 80px;
+	display: inline-block;
+	vertical-align: top;
+}
+.browser {
+	width: 70%;
+	display: inline-block;
+}
+.numrequests {
+	display: inline-block;
+	text-align: center;
+	width: 70px;
+	vertical-align: top;
+}
