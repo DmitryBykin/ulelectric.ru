@@ -52,12 +52,12 @@ module.exports = function(grunt) {
     watch: {
       style: {
         files: ["less/**/*.less"],
-        tasks: ["less", "postcss"]
-      },
-      webp: {
-        files: ["images/**/*.{png, jpg}"],
+        tasks: ["less", "csso"]
+      },      
+      webpack: {
+        files: ["images/**/*.{png,gif,jpg}"],
         tasks: ["webp"]
-      }
+      } 
     },
     
     csso: {
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
     webp: {
       files: {
         expand: true,        
-        src: 'images/*.{png, jpg}'
+        src: ['images/*.png', 'images/*.jpg']
         //dest: 'images/*'
         //cwd: 'source-images/*.png'
       },
