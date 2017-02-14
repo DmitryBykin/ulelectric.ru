@@ -53,6 +53,10 @@ module.exports = function(grunt) {
       style: {
         files: ["less/**/*.less"],
         tasks: ["less", "postcss"]
+      },
+      webp: {
+        files: ["images/**/*.{png, jpg}"],
+        tasks: ["webp"]
       }
     },
     
