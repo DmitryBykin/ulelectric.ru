@@ -90,10 +90,10 @@
 			<script>
 				for(var i=0;i<captions.length;i++){
 					document.write('<figure>');		
-						document.write('<a rel=\"gallery\" class=\"photo\" href=\"./images/' +prefix+(i+1)+ '.jpg\" title=\"'+captions[i]+'\">');
+						document.write('<a rel=\"gallery\" class=\"photo\" href=\"images/' +prefix+(i+1)+ '.jpg\" title=\"'+captions[i]+'\">');
 						document.write('<picture>');
             document.write('<source srcset=\"images/' + prefix+(i+1)+'.webp\"' + ' type=\"image/webp\">');
-						document.write('<img src=\"./images/'+prefix+(i+1)+'.jpg\" class=\"images\" alt=\"'+captions[i]+'\"></a>');
+						document.write('<img src=\"images/'+prefix+(i+1)+'.jpg\" class=\"images\" alt=\"'+captions[i]+'\"></a>');
 						document.write('</picture>');
 						document.write('<figcaption>'+captions[i]+'</figcaption>');						
 					document.write('</figure>');
