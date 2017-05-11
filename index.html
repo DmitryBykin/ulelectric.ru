@@ -18,10 +18,10 @@
 <body>
 
 	<nav>
-		<h2> <a href='/#uslugi'>Услуги </a></h2>
-		<h2> <a href='/#price'>Цены </a></h2>
-		<h2> <a href='/examples.html#examples'> Примеры работ </a></h2>
-		<h2> <a href='/#contacts'> Контакты </a></h2>
+		<h2> <a class="nav__link" href='#uslugi'>Услуги </a></h2>
+		<h2> <a class="nav__link" href='#price'>Цены </a></h2>
+		<h2> <a class="nav__link" href='examples.html#examples'> Примеры работ </a></h2>
+		<h2> <a class="nav__link" href='#contacts'> Контакты </a></h2>
 	</nav>		
 	<div class="bigpicture"></div>
 
@@ -40,7 +40,7 @@
 			<li><h2>установка, подключение распределительных щитков, счётчиков </h2></li>				
 			<li><h2>подключение торгового и промышленного оборудования </h2></li>
 			<li><h2>монтаж проводки во влажных помещениях (банях) </h2></li>
-			<li class="new"><h2>проводка ретро, проводка в деревянных домах </h2></li>
+			<li class="new"><h2>проводка ретро, проводка в деревянных домах <a href='/examples.html#examples'> посмотреть примеры </a></h2></li>
 		</ul>
 	</div> 
 	<div class="vyprab">
@@ -247,6 +247,27 @@ VK.Widgets.CommunityMessages("vk_community_messages", 115149893, {tooltipButtonT
 <noscript><div><img src="https://mc.yandex.ru/watch/36628650" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="js/easing.js" type="text/javascript"></script>
+<!-- UItoTop plugin -->
+<script src="js/jquery.ui.totop.min.js" type="text/javascript"></script>  
+<!-- Starting the plugin -->
+<script type="text/javascript">
+	$(document).ready(function() {
+  	$().UItoTop({ easingType: 'easeOutQuart' });
+	});
+</script>  
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("a.nav__link").click(function () {
+			var elementClick = $(this).attr("href");
+			var destination = $(elementClick).offset().top;
+			$('html,body').animate( { scrollTop: destination }, 500 );
+			return false;
+		});
+	});
+</script> 
 
 </body>
 </html>
