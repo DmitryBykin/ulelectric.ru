@@ -1,23 +1,23 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
-	<meta charset='utf-8'>
+	<meta charset="utf-8">
 
 	<title>Примеры электромонтажных работ наших электриков-специалистов</title>
 	<meta name="description" content="Примеры работ, выполненных нашими специалистами">
 	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width">
 	<!--<link rel='stylesheet' href='css/reset.css'>-->
-	<link rel='stylesheet' href='css/style.min.css'>
+	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	<!-- для галереи -->
 	<link rel="stylesheet" type="text/css" href="./scripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <!--<script src="./scripts/jquery-1.4.3.min.js"></script>-->
-	<script type="text/javascript" src="./scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="./scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script src="./scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script src="./scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 
 	<script>
     $(document).ready(function(){
@@ -37,7 +37,7 @@
 	<![endif]-->
 	<script>
 		var prefix   = 'pic';
-		var captions = [ 
+		var captions = [
 				 'Монтаж светильников ретро',
 				 'Двойная розетка ретро',
 				 'Выключатель',
@@ -59,24 +59,38 @@
 				 'Пример распайки коробки',
 				 'Укладка инфракрасного тёплого пола под линолеум',
 				 'Укладка инфракрасного тёплого пола под линолеум',
-				 'Укладка обычного тёплого пола на кухне'
+				 'Укладка обычного тёплого пола на кухне',
+				 'Проводка в новой квартире',
+				 'Укладка тёплого кабеля на балконе',
+				 'Подключение автоматов'
 				];
 	</script>
 </head>
 <body>
-		<nav>
-			<h2> <a href='/#uslugi'>Услуги </a></h2>
-			<h2> <a href='/#price'>Цены </a></h2>
-			<h2> <a href='/examples.html#examples'> Примеры работ </a></h2>
-			<h2> <a href='/#contacts'> Контакты </a></h2>
-		</nav>
-		<div class="bigpicture"></div>
+	<nav>
+		<ul class="nav">
+			<li>
+				<a class="nav__link" href="index.html#uslugi">Услуги </a>
+			</li>
+			<li>
+				 <a class="nav__link" href="index.html#price">Цены </a>
+			</li>
+			<li>
+				 <a class="nav__link" href="examples.html#examples"> Примеры работ </a>
+			</li>
+			<li>
+				 <a class="nav__link" href="index.html#contacts"> Контакты </a>
+			</li>
+		</ul>
+	</nav>
 
-	<div class="masterelectric_phone">
-			<h1>Электрик Ульяновск</h1>			
+		<div class="bigpicture">
+			<div class="masterelectric_phone">
+				<h1>Электрик Ульяновск</h1>
 				<p class="phone"> +7 937 88 777 40</p>
-				<p class="call"> <a href="tel:+79378877740">позвонить!</a></p>			
-	</div>
+				<a href="tel:+79378877740"><p class="call">позвонить!</p></a>
+			</div>
+		</div>
 
 	<br>
 
@@ -86,28 +100,28 @@
 			<a href='/'> Главная страница </a>
 		</div>
 		<div class='examples'>
-		
+
 			<script>
 				for(var i=0;i<captions.length;i++){
-					document.write('<figure>');		
+					document.write('<figure>');
 						document.write('<a rel=\"gallery\" class=\"photo\" href=\"images/' +prefix+(i+1)+ '.jpg\" title=\"'+captions[i]+'\">');
 						document.write('<picture>');
             document.write('<source srcset=\"images/' + prefix+(i+1)+'.webp\"' + ' type=\"image/webp\">');
 						document.write('<img src=\"images/'+prefix+(i+1)+'.jpg\" class=\"images\" alt=\"'+captions[i]+'\"></a>');
 						document.write('</picture>');
-						document.write('<figcaption>'+captions[i]+'</figcaption>');						
+						document.write('<figcaption>'+captions[i]+'</figcaption>');
 					document.write('</figure>');
 				}
 			</script>
-				
-		</div>  <!-- examples -->	
+
+		</div>  <!-- examples -->
 		<div class='main_for_mobile'>
 			<a href='/'> Главная страница </a>
 		</div>
 	</div>  <!-- exback -->
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
+<script>
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {

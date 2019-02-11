@@ -23,8 +23,8 @@
 
 html {
 	//background-color: #F4F3F6;
-	//background-color: #ffffff;  
-	//background-color: #ffffff;  
+	//background-color: #ffffff;
+	//background-color: #ffffff;
 	background: url('../images/textur.jpg');
 }
 body {
@@ -48,15 +48,15 @@ nav {
 	width: 100%;
 	padding-top: 10px;
 	height: 40px;
-	text-align: center;	
+	text-align: center;
 	position: fixed;
-	background-image: url('../images/bannertop.jpg');	
+	background-image: url('../images/bannertop.jpg');
 	background-size: cover;
 	overflow: hidden;
 }
-nav h2 {
+nav li {
 	display: inline;
-	font-family: 'Roboto'; 
+	font-family: 'Roboto';
 	margin-right: 35px;
 	letter-spacing: 0.15em;
 	font-weight: bold;
@@ -64,7 +64,7 @@ nav h2 {
 	font-size: 1.4em;
 }
 h1.masterelectric {
-	margin: -95px 0 0 25px;
+	//margin: -95px 0 0 25px;
 	text-align: left;
 	color: white;
 	font-family: 'Roboto';
@@ -117,7 +117,7 @@ h1.phone:hover {
 	padding-top: 40px;
 	background-color: rgba(49,95,172,1.0);
 	height: 485px;
-	text-align: center;		
+	text-align: center;
 	overflow: hidden;
 }
 
@@ -131,11 +131,11 @@ h1.phone:hover {
 }
 
 ul.raboty > li > h2 {
-	color: #242227;		
+	color: #242227;
 	font-family: 'Tahoma', Arial;
 	letter-spacing: 0.1em;
 	font-weight: normal;
-	font-size: 1.7em;	
+	font-size: 1.7em;
 }
 ul.raboty {
 	text-align: left;
@@ -160,7 +160,7 @@ ul.raboty li.new {
 .price {
 	width: 70%;
 	margin: 0 auto;
-	text-align: center;	
+	text-align: center;
 }
 
 td, th {
@@ -169,7 +169,7 @@ td, th {
 }
 table {
 	border-spacing: 1px;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 .nomertd {
 	text-align: center;
@@ -185,8 +185,8 @@ table {
 }
 
 caption {
-	color: #242227;		
-	font-family: 'Arial', 'Comic Sans MS'; 		
+	color: #242227;
+	font-family: 'Arial', 'Comic Sans MS';
 	letter-spacing: 0.1em;
 	font-weight: bold;
 	font-size: 1.9em;
@@ -197,10 +197,10 @@ caption {
 //table tr:nth-of-type(odd){ background-color: #F5F5F5; }
 //table tr:nth-of-type(even){background-color: #F0F8FF; }
 
-.examples {	
+.examples {
 	margin: 0 auto;
-	padding-top: 20px;	
-	text-align: center;	
+	padding-top: 20px;
+	text-align: center;
 }
 
 .images {
@@ -225,14 +225,14 @@ figure {
 	margin-bottom: 20px;
 	margin-left: 3%;
 	margin-right: 3%;
-	vertical-align: top;	
-	width: 340px;	
+	vertical-align: top;
+	width: 340px;
 }
-figcaption {		
+figcaption {
 	margin-top: 15px;
 	font-family: 'Tahoma', Arial;
 	font-weight: normal;
-	font-size: 1.2em;	
+	font-size: 1.2em;
 	text-align: center;
 }
 .hfield {
@@ -250,8 +250,8 @@ figcaption {
 }
 
 .zagolovok {
-	color: #242227;		
-	font-family: 'Arial', 'Comic Sans MS'; 		
+	color: #242227;
+	font-family: 'Arial', 'Comic Sans MS';
 	letter-spacing: 0.1em;
 	font-weight: bold;
 	font-size: 1.9em;
@@ -263,11 +263,11 @@ figcaption {
 	display: inline-block;
 	vertical-align: top;
   padding-top: 7px;
-  
+
 	color: rgb(27,24,118);
 	font-size: 16px;
 	border-bottom: 1px dashed rgb(27,24,118);
-  
+
   &:hover {
     color: rgba(27, 24, 118, 0.3);
     border-bottom: none;
@@ -276,8 +276,8 @@ figcaption {
 .details p{
 	width: 70%;
 	margin: 0 auto;
-	color: #242227;		
-	font-family: 'Arial', 'Comic Sans MS'; 		
+	color: #242227;
+	font-family: 'Arial', 'Comic Sans MS';
 	letter-spacing: 0.1em;
 	font-weight: normal;
 	font-size: 1.1em;
@@ -285,10 +285,10 @@ figcaption {
 	margin-top: 10px;
 }
 .masterelectric_phone {
-	margin-top: -175px;
+	margin-top:  300px;
 	margin-left: 30px;
 	width: 600px;
-	height: 120px;
+	//height: 120px;
 	text-align: center;
 	color: white;
 	font-family: 'Roboto';
@@ -323,7 +323,7 @@ p.call {
 	display: inline-block;
 	margin-left: 10px;
 }
-.vktext {	
+.vktext {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 5px;
@@ -359,11 +359,16 @@ p.call {
 	body {
 		width: auto;
 	}
-	nav, .garantiya_logo, .bigpicture, .uslugi, .details, .text {
+	nav, .garantiya_logo,  .uslugi, .details, .text {
 		display: none;
 	}
+	.bigpicture {
+		background: none;
+		height: auto;
+		padding-top: 0;
+	}
 	table {
-		margin: 0 10px;	
+		margin: 0 10px;
 	}
 	.examples_for_mobile a {
 		display: inline;
@@ -380,7 +385,7 @@ p.call {
 	.main_for_mobile {
 		margin-top: 10px;
 	}
-	.main_for_mobile a {		
+	.main_for_mobile a {
 		width: 95%;
 		margin: 0 auto;
 		color: #B918C1;
